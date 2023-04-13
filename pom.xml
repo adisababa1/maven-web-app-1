@@ -20,8 +20,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-
-		<sonar.host.url>http://34.219.55.23:9000/</sonar.host.url>
+                <sonar.host.url>http://54.88.103.116:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
 		<sonar.password>admin</sonar.password>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -97,17 +96,21 @@
 
 		
 	    <repository>
-	      <id>nexus</id>
-	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://3.80.6.63:8888/landmarktech/repository/ebay-releases/</url>
+	       <id>nexus</id>
+	            <name>Landmark Technologies Releases Nexus Repository</name>
+	            <url>http://52.205.124.23:8181/landmarktech/repository/ebay-releases/</url>
+	       <id>nexus</id>    
+		    
 	    </repository>
 	    
-	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://3.80.6.63:8888/landmarktech/repository/ebay-snapshots/</url>
-	    </snapshotRepository>
-	</distributionManagement>
+	       <snapshotRepository>
+	         <id>nexus</id>
+	            <name>Landmark Technologies Snapshot Nexus Repository </name>
+	            <url>http://52.205.124.23:8181/landmarktech/repository/ebay-snapshots/</url>
+	       <id>nexus</id>    
+	       </snapshotRepository>
+		
+	 </distributionManagement>
 	
 	<build>
 		<finalName>maven-web-app</finalName>
